@@ -1,0 +1,12 @@
+@players.map do |player|
+  {
+    first_name: player.first_name,
+    last_name: player.last_name,
+    war: player.war,
+    position_1: player.position1,
+    position_2: player.position2,
+    position_3: player.position3,
+    position_4: player.position4
+   
+  }
+end
