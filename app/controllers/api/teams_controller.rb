@@ -11,15 +11,15 @@ class Api::TeamsController < ApplicationController
     @team = Team.new(
 
       name: params[:name],
-      pitcher_id: params[:pitcher_id],
-      catcher_id: params[:catcher_id],
-      first_base_id: params[:first_base_id],
-      second_base_id: params[:second_base_id],
-      third_base_id: params[:third_base_id],
-      shortstop_id: params[:shortstop_id],
-      left_field_id: params[:left_field_id],
-      center_field_id: params[:center_field_id],
-      right_field_id: params[:right_field_id],
+      pitcher_id: params[:pitcher],
+      catcher_id: params[:catcher],
+      first_base_id: params[:first_base],
+      second_base_id: params[:second_base],
+      third_base_id: params[:third_base],
+      shortstop_id: params[:shortstop],
+      left_field_id: params[:left_field],
+      center_field_id: params[:center_field],
+      right_field_id: params[:right_field],
       user_id: params[:user_id],
     )
 
