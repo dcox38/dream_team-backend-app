@@ -8,8 +8,11 @@ Rails.application.routes.draw do
   # end
 
   namespace :api do
+    post "/users" => "users#create"
+    post "/sessions" => "sessions#create"
     get "/players" => "players#index"
     get "/players/:id" => "players#show"
+
   end
 
 
