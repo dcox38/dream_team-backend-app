@@ -1,0 +1,14 @@
+{
+  name: @team.name,
+  pitcher: @team.pitcher_id,
+  catcher: @team.catcher_id,
+  first_base: @team.first_base_id,
+  second_base: @team.second_base_id,
+  third_base: @team.third_base_id,
+  shortstop: @team.shortstop_id,
+  left_field: @team.left_field_id,
+  center_field: @team.center_field_id,
+  right_field: @team.right_field_id,
+  user_id: @team.user_id,
+  total_war: @team.total_war
+}
