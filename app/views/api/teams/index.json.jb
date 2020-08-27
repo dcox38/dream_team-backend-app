@@ -1,15 +1,15 @@
 @teams.map do |team|
   {
     name: team.name,
-    pitcher: team.pitcher_id,
-    catcher: team.catcher_id,
-    first_base: team.first_base_id,
-    second_base: team.second_base_id,
-    third_base: team.third_base_id,
-    shortstop: team.shortstop_id,
-    left_field: team.left_field_id,
-    center_field: team.center_field_id,
-    right_field: team.right_field_id,
+    pitcher: team.pitcher.first_name,
+    catcher: team.catcher.first_name,
+    first_base: team.first_base.first_name,
+    second_base: team.second_base.first_name,
+    third_base: team.third_base.first_name,
+    shortstop: team.shortstop.first_name,
+    left_field: team.left_field.first_name,
+    center_field: team.center_field.first_name,
+    right_field: team.right_field.first_name,
     user_id: team.user_id,
     total_war: team.total_war
   }
