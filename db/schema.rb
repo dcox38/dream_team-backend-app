@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_19_234944) do
+ActiveRecord::Schema.define(version: 2020_08_27_012244) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "games", force: :cascade do |t|
+    t.integer "player_1_user_id"
+    t.integer "player_2_user_id"
+    t.integer "winner_user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "players", force: :cascade do |t|
     t.string "first_name"
@@ -23,6 +31,23 @@ ActiveRecord::Schema.define(version: 2020_08_19_234944) do
     t.integer "position2"
     t.integer "position3"
     t.integer "position4"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "teams", force: :cascade do |t|
+    t.string "name"
+    t.integer "pitcher_id"
+    t.integer "catcher_id"
+    t.integer "first_base_id"
+    t.integer "second_base_id"
+    t.integer "third_base_id"
+    t.integer "shortstop_id"
+    t.integer "left_field_id"
+    t.integer "center_field_id"
+    t.integer "right_field_id"
+    t.integer "user_id"
+    t.integer "total_war"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

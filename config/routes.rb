@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
     get "/players" => "players#index"
     get "/players/:id" => "players#show"
+    get "/teams" => "teams#index"
+    get "/games" => "games#index"
 
   end
 

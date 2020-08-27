@@ -1,0 +1,7 @@
+@games.map do |game|
+  {
+    player_1_user_id: game.player_1_user_id,
+    player_2_user_id: game.player_2_user_id,
+    winner_user_id: game.winner_user_id
+  }
+end 
