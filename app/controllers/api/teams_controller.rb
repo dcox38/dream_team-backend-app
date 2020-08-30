@@ -2,7 +2,7 @@ class Api::TeamsController < ApplicationController
   # before_action :authenticate_user
 
   def index
-    @teams = Team.all
+    @teams = current_user.teams
     render "index.json.jb"
   end
 
@@ -20,7 +20,7 @@ class Api::TeamsController < ApplicationController
       left_field_id: params[:left_field],
       center_field_id: params[:center_field],
       right_field_id: params[:right_field],
-      user_id: params[:user_id],
+      user_id: current_user.id
     )
 
     @team.save

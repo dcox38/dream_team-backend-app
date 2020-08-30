@@ -1,4 +1,9 @@
 class Team < ApplicationRecord
+  belongs_to :game
+  belongs_to :user
+  has_many :players
+
+
   def pitcher
     Player.find_by(id: pitcher_id) 
   end
