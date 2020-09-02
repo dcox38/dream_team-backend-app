@@ -6,7 +6,8 @@
     position_1: player.position1,
     position_2: player.position2,
     position_3: player.position3,
-    position_4: player.position4
+    position_4: player.position4,
+    id: player.id
    
   }
 end
