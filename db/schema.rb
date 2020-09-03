@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_30_155915) do
+ActiveRecord::Schema.define(version: 2020_09_03_234505) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "games", force: :cascade do |t|
-    t.integer "player_1_user_id"
-    t.integer "player_2_user_id"
+    t.integer "user_one_war"
+    t.integer "user_two_war"
     t.integer "winner_user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -5,7 +5,23 @@ class Api::GamesController < ApplicationController
   end
 
   def create
-    @game = Game.all
+
+    # @winner_user_id = []
+
+    # if 
+
+
+
+
+    @game = Game.new(
+
+      player_1_user_id: 
+
+
+    )
+
+
+
   end
   
 
