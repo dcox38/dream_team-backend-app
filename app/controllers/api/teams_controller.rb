@@ -1,5 +1,5 @@
 class Api::TeamsController < ApplicationController
-  # before_action :authenticate_user
+  before_action :authenticate_user
 
   def index
     @teams = current_user.teams

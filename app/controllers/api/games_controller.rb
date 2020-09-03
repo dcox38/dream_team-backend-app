@@ -3,4 +3,12 @@ class Api::GamesController < ApplicationController
     @games = Game.all
     render "index.json.jb"
   end
+
+  def create
+    @game = Game.all
+  end
+  
+
+
+
 end
