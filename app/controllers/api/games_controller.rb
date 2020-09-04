@@ -4,18 +4,6 @@ class Api::GamesController < ApplicationController
     render "index.json.jb"
   end
 
-  # def create
-
-  #   @winner_user_id = []
-
-  #   if user_one_war > user_two_war
-  #     winner_user_id << 1
-  #   end
-
-  #   if user_two_war > user_one_war
-  #     winner_user_id << 2
-  #   end
-
   def create
 
     team_one_total_war = Team.find_by(id: params[:team_one_id]).total_war
