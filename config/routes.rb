@@ -15,6 +15,8 @@ Rails.application.routes.draw do
     get "/teams" => "teams#index"
     get "/games" => "games#index"
     post "/teams" => "teams#create"
+    post "/games" => "games#create"
+
  
 
   end

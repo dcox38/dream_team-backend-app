@@ -1,7 +1,11 @@
+
+
+
+
 @games.map do |game|
   {
-    player_1_user_id: game.player_1_user_id,
-    player_2_user_id: game.player_2_user_id,
+    user_one_war: game.user_one_war,
+    user_two_war: game.user_two_war,
     winner_user_id: game.winner_user_id
   }
 end 
