@@ -2,7 +2,7 @@ class Api::TeamsController < ApplicationController
   before_action :authenticate_user
 
   def index
-    @teams = current_user.teams
+    @teams = current_user.teams.order('created_at DESC')
     # @teams = Team.all
     render "index.json.jb"
   end
