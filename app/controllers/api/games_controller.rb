@@ -16,14 +16,20 @@ class Api::GamesController < ApplicationController
       winner_user_id = Team.find_by(id: params[:team_two_id]).user_id
     end
 
-    # winner_name = Team.find_by(id: params[:winner_user_id]).name
+    if team_one_total_war > team_two_total_war
+      winner_name = Team.find_by(id: params[:team_one_id]).name
+    else
+      winner_name = Team.find_by(id: params[:team_two_id]).name
+    end
+
+    
 
     @game = Game.new(
 
       user_one_war: team_one_total_war,
       user_two_war: team_two_total_war,
       winner_user_id: winner_user_id,
-      # winner_name: winner_name
+      winner_name: winner_name
     )
     @game.save
     render "show.json.jb"

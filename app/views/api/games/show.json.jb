@@ -1,6 +1,7 @@
 {
   user_one_war: @game.user_one_war,
   user_two_war: @game.user_two_war,
-  winner_user_id: @game.winner_user_id
+  winner_user_id: @game.winner_user_id,
+  winner_name: @game.winner_name
   
 }
